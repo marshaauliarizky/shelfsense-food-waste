@@ -186,6 +186,10 @@ def build_document():
         document,
         "Dokumen ini menjelaskan apa yang dibangun, bagaimana cara menjalankannya, bagaimana membaca hasil analisis, dan kapan file Excel digunakan. ShelfSense adalah aplikasi portfolio berbasis Streamlit yang membantu tim bakery memahami risiko waste dan menentukan tindakan operasional yang dapat dijelaskan.",
     )
+    document.add_heading("Live demo dan kontak", level=1)
+    add_paragraph(document, "Aplikasi ShelfSense sudah dipublikasikan dan dapat dicoba langsung tanpa menjalankan project secara lokal:")
+    add_paragraph(document, "Live demo: https://shelfsense-food-waste.streamlit.app/", bold_lead="Live demo:")
+    add_paragraph(document, "Kontak: marshaauliaworks@gmail.com", bold_lead="Kontak:")
     add_image(document, ROOT / "assets" / "shelfsense-hero.png", width=6.1, caption="Tampilan visual utama ShelfSense")
 
     document.add_heading("Ringkasan project", level=1)

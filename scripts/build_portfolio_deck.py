@@ -91,6 +91,7 @@ def build_deck():
     add_text(slide, "What should sell,\nwhat may spoil,\nand what to do next", 0.72, 1.55, 5.4, 2.1, size=34, bold=True)
     add_text(slide, "A practical Streamlit dashboard for bakery operations", 0.75, 4.1, 4.6, 0.45, size=16, color=MUTED)
     add_text(slide, "Built with Python, Pandas, SQLite, Plotly, and Streamlit", 0.75, 6.35, 5.4, 0.22, size=11, color=MUTED)
+    add_text(slide, "Live demo: shelfsense-food-waste.streamlit.app", 0.75, 6.7, 5.8, 0.22, size=10, color=GREEN, bold=True)
 
     slide = prs.slides.add_slide(blank); set_background(slide)
     add_title(slide, "The operating problem", "Perishable inventory creates a trade off between availability and waste")
@@ -170,6 +171,17 @@ def build_deck():
     add_text(slide, "DELIVERY\n\nA usable dashboard, exportable workbook, tests, and documentation", 9.0, 2.55, 3.1, 1.55, size=19, color=WHITE, bold=True)
     add_text(slide, "Current scope: local MVP with SQLite and a moving average baseline. The next production steps are authenticated access, a managed database, validated forecasting, and deployment.", 1.0, 5.45, 11.2, 0.72, size=16, color=RGBColor(213, 226, 215), align=PP_ALIGN.CENTER)
     add_footer(slide, 7)
+
+    slide = prs.slides.add_slide(blank); set_background(slide, DARK)
+    add_text(slide, "Thank you for exploring ShelfSense", 0.9, 1.25, 11.5, 0.65, size=32, color=WHITE, bold=True, align=PP_ALIGN.CENTER)
+    add_text(slide, "See the working dashboard and explore the decision flow in the live demo.", 1.25, 2.15, 10.8, 0.35, size=17, color=RGBColor(213, 226, 215), align=PP_ALIGN.CENTER)
+    add_box(slide, 2.0, 3.15, 9.3, 1.35, fill=RGBColor(52, 72, 61), line=RGBColor(88, 117, 104))
+    add_text(slide, "LIVE DEMO", 2.35, 3.45, 1.55, 0.25, size=12, color=RGBColor(213, 226, 215), bold=True)
+    add_text(slide, "https://shelfsense-food-waste.streamlit.app/", 3.9, 3.38, 6.85, 0.35, size=18, color=WHITE, bold=True)
+    add_text(slide, "Let's connect", 2.0, 5.15, 1.8, 0.3, size=18, color=AMBER, bold=True)
+    add_text(slide, "marshaauliaworks@gmail.com", 2.0, 5.62, 4.7, 0.35, size=18, color=WHITE, bold=True)
+    add_text(slide, "Portfolio project | Food waste prevention and dynamic pricing", 2.0, 6.25, 7.8, 0.25, size=13, color=RGBColor(213, 226, 215))
+    add_footer(slide, 8)
 
     prs.save(str(OUTPUT))
     print(OUTPUT)
