@@ -1,5 +1,11 @@
 # ShelfSense User Guide
 
+## Demo online dan kontak
+
+Kalau tidak ingin menjalankan project secara lokal, buka versi live di [ShelfSense Streamlit Demo](https://shelfsense-food-waste.streamlit.app/).
+
+Untuk pertanyaan atau kolaborasi, hubungi `marshaauliaworks@gmail.com`.
+
 ## 1. Menjalankan aplikasi
 
 Jalankan perintah berikut dari folder project:

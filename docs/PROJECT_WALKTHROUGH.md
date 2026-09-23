@@ -1,6 +1,9 @@
 # ShelfSense Project Walkthrough
 
-Dokumen ini menjelaskan project ShelfSense dari awal sampai akhir. Gunakan ini sebelum project dimasukkan ke GitHub atau dipublish.
+Dokumen ini menjelaskan project ShelfSense dari awal sampai akhir. Source code tersedia di GitHub dan aplikasi sudah dipublish sebagai demo Streamlit.
+
+**Live demo:** https://shelfsense-food-waste.streamlit.app/  
+**Kontak:** marshaauliaworks@gmail.com
 
 ## 1. ShelfSense itu apa
 
@@ -202,17 +205,19 @@ Hasil terakhir yang berhasil diverifikasi adalah:
 7. `docs/ShelfSense_Portfolio_Deck_v2.pptx` adalah presentasi portfolio.
 8. Dokumen ini menjelaskan project secara menyeluruh.
 
-## 11. Bagian yang belum dilakukan
+## 11. Status publish dan catatan deployment
 
-Project belum diupload ke GitHub dan belum dipublish ke hosting. Itu sengaja ditunda supaya struktur dan alurnya dipahami terlebih dahulu.
+Project sudah diupload ke GitHub dan dipublish ke Streamlit Community Cloud. Link live demo dapat digunakan oleh pembaca yang ingin mencoba aplikasi tanpa menjalankan project secara lokal.
 
-Sebelum publish, ingat hal berikut:
+Tetap ingat hal berikut ketika melakukan update:
 
 1. `data/shelfsense.db` adalah database lokal.
 2. `__pycache__` dan `.pytest_cache` adalah file sementara.
 3. Database lokal dan secret tidak boleh diupload ke GitHub.
 4. Dataset simulasi boleh disertakan karena tidak berisi data bisnis nyata.
-5. SQLite cocok untuk demo lokal, tetapi bukan pilihan ideal untuk banyak user secara bersamaan.
+5. SQLite cocok untuk demo portfolio, tetapi bukan pilihan ideal untuk banyak user secara bersamaan.
+
+Jika aplikasi lama tidak dibuka, Streamlit Community Cloud dapat membuatnya masuk mode tidur. Membuka kembali link live demo akan membangunkannya.
 
 ## 12. Cara menjalankan project
 
@@ -223,4 +228,4 @@ python -m pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
-Untuk sekarang, jangan menjalankan proses publish. Pahami dulu file, alur data, dan fungsi setiap halaman menggunakan dokumen ini sebagai panduan.
+Jika ingin mencoba versi live, buka link demo di bagian atas dokumen. Jika ingin menjalankan versi lokal, gunakan perintah di atas. Gunakan dokumen ini sebagai panduan untuk memahami file, alur data, dan fungsi setiap halaman.
