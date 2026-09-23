@@ -2,6 +2,10 @@
 
 ShelfSense is a portfolio project for food-waste prevention and markdown planning in bakery operations. It turns simulated production, sales, stock, expiry, and markdown records into operational views and explainable recommendations.
 
+## Live Demo
+
+Try the deployed Streamlit app here: [ShelfSense Live Demo](https://shelfsense-food-waste.streamlit.app/)
+
 ## Run locally
 
 ```powershell
